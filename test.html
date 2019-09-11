@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color:#fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #0C6793;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #fff;
+  color: #0C6793;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:#0C6793;
+  font-family: 'Courier New', Courier, monospace; 
+  
+}
+.rectangle{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+align-items: center;
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.rooms{
+margin-top:250px;
+}
+/*Contact*/
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#0C6793;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#0C6793;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 50px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.rectangle {
+  height:100px;
+  width: 420px;
+  background-color: #ffffff;
+}
+footer {
+  background-color:#0C6793;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.c{
+margin:60px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+align-items: center;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Clear floats after the columns */
+.r:after{
+  content:inherit;
+  display: table;
+  clear: both;
+}
+ul{
+    text-align: center; 
+    color:#0C6793;
+}
+
+/*Icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a><i class="glyphicon glyphicon-home w3-spin w3-jumbo"></i></a>
+<a href="#home">Home</a>
+<a href="#c">About</a>
+<a href="#slideshow-container"> Rooms</a>
+<a href="#container">Contact</a>
+</div>
+
+<div><img src="a1.png" style="width: 100%;"/></div>
+
+<div class="centered">
+        
+        <div class="rectangle">
+        <h1>WELCOME TO RESORT</h1>
+        <p style="font-size: 20px;"> Life as it should be</p>
+    </div>
+        </div>
+
+        <div class="r">
+         <div class="c">
+         <span style="text-align: center; letter-spacing: 0.1em;color:#0C6793;"><h1> About Resort</h1></span>
+                           <p style="text-align: center; color:#0C6793;">One of the most popular destinations worldwide and the top Greek destination, Santorini.<br>
+                            is one of the most magical places you’ve ever seen!
+                            Located on the southern side of the Aegean sea, Santorini Greece is a part of Cyclades island complex.<br>         
+                            Check our Santorini travel guide to discover everything about this magical island. Let the exploration begin!</p>
+                         
+                </div>
+
+                <div class="c">
+
+                        <h1 style="color:#0C6793;text-align: center; letter-spacing: 0.1em;">Amenities</h1>
+                        <ul > Free resident car parking</ul>
+                        <ul  >Free wifi access</ul>
+                        <ul  >24 hour reception and room service</ul>
+                        <ul >Laundry facilities</ul>
+                </div>
+              </div>
+            
+        <div class="rooms">
+                
+                <span style="text-align: center; letter-spacing: 0.1em; color:#0C6793;"><h1>Rooms</h1></div></span></div>
+        </div>
+        
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="r1.png" style="width:100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="r2.png" style="width:100%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="r3.png" style="width:100%">
+         
+        </div>
+        <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="r4.png" style="width:100%">
+                
+              </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+
+<!--Contact-->
+<div class="container">
+        <div style="text-align:center">
+                <span style="text-align: center; letter-spacing: 0.1em; color:#0C6793;"><h1>Contact Us</h1></div></span>
+        
+        <div class="row">
+          <div class="column">
+            <img src="m.png" style="width:420px; height: 420px;">
+          </div>
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Saudi</option>
+                <option value="canada">UAE</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+            
+          </footer>
+
+
+
+
+      <script>
+
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      height: 'toggle'
+    });
+  });
+});
+
+
+
+</script>
+</body>
+</html>
